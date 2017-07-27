@@ -1,0 +1,14 @@
+<h2 class="title">
+  <a class="btn left" ng-href="#!/todos/{{todo.id}}">&#x21a9;</a> Edit
+</h2>
+<form>
+  <label class="label" for="title">Title</label>
+  <input id="title" type="text" ng-model="edit.title">
+  <label class="label" for="notes">Notes</label>
+  <textarea id="notes" ng-model="edit.notes"></textarea>
+  <input type="button" class="btn" value="Save" ng-click="save()">
+  <input id="starred" type="checkbox" class="hide" ng-model="edit.starred">
+  <label class="btn btn-lg" for="starred">
+    <span class="star" ng-class="{starred:edit.starred}">&#x2605;</span>
+  </label>
+</form>

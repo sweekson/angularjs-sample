@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: arial;
+}
+
+.view {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.title {
+  text-align: center;
+}
+
+.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tasks > li {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  line-height: 18px;
+  font-size: 18px;
+  margin-top: 8px;
+  padding: 8px 16px;
+}
+
+.tasks > .done {
+  background: #eee;
+}
+
+.tasks > li > a {
+  color: #333;
+  text-decoration: none;
+}
+
+.star {
+  color: #ccc;
+}
+
+.star.starred {
+  color: #f1c232;
+}
+
+.btn {
+  color: #222;
+  line-height: 18px;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.left {
+  float: left;
+}
+
+.btn.right {
+  float: right;
+}
+
+.btn-lg {
+  line-height: 26px;
+  font-size: 26px;
+}
+
+input.btn,
+button.btn {
+  background: #3d85c6;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+form .btn {
+  float: right;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type=text],
+textarea {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-family: arial;
+  line-height: 18px;
+  font-size: 18px;
+  display: block;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,9 @@
+<h2 class="title">
+  <a class="btn left" href="#!/">&#x21a9;</a> Detail
+  <a class="btn right" ng-href="#!/todos/{{todo.id}}/edit">&#x270e;</a>
+</h2>
+<h3>
+  <span class="star" ng-class="{starred:todo.starred}">&#x2605;</span>
+  <span ng-bind="todo.title"></span>
+</h3>
+<div class="notes" ng-bind="todo.notes"></div>

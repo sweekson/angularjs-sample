@@ -1,0 +1,10 @@
+<h2 class="title">
+  Todos <a class="btn right" href="#!/todos/create">&#x271b;</a>
+</h2>
+<ul class="tasks">
+  <li ng-repeat="todo in todos.data" ng-class="{done:todo.done}">
+    <input type="checkbox" ng-checked="todo.done" ng-model="todo.done">
+    <span class="star" ng-class="{starred:todo.starred}">&#x2605;</span>
+    <a ng-bind="todo.title" ng-href="#!/todos/{{todo.id}}"></a>
+  </li>
+</ul>

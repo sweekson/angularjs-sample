@@ -1,0 +1,14 @@
+<h2 class="title">
+  <a class="btn left" href="#!/">&#x21a9;</a> Create
+</h2>
+<form>
+  <label class="label" for="title">Title</label>
+  <input id="title" type="text" ng-model="title">
+  <label class="label" for="notes">Notes</label>
+  <textarea id="notes" ng-model="notes"></textarea>
+  <input type="button" class="btn" value="Create" ng-click="create()">
+  <input id="starred" type="checkbox" class="hide" ng-model="starred">
+  <label class="btn btn-lg" for="starred">
+    <span class="star" ng-class="{starred:starred}">&#x2605;</span>
+  </label>
+</form>
